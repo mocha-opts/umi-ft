@@ -8,8 +8,8 @@ generator client {
 }
 
 datasource db {
-  provider          = "mysql"
-  url               = env("DATABASE_URL")
+  provider             = "mysql"
+  url                  = env("DATABASE_URL")
   referentialIntegrity = "prisma"
 }
 
@@ -23,7 +23,7 @@ model Post {
   authorId  Int
   imageUrl  String?
   tags      String
-
+  
   @@index(authorId)
 }
 
