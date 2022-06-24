@@ -1,19 +1,26 @@
 import type { UmiApiRequest, UmiApiResponse } from "umi";
 import { PrismaClient } from "@prisma/client";
 import bcrypt from "bcryptjs";
-import { signToken } from "utils/jwt";
+import { signToken } from "@/utils/jwt";
 
 export default async function (req: UmiApiRequest, res: UmiApiResponse) {
   switch (req.method) {
     case "POST":
       try {
         const prisma = new PrismaClient();
+        // const formData = JSON.parse(req.body).data;
+        const formData = req.body.data;
         const user = await prisma.user.create({
           data: {
-            email: req.body.email,
-            passwordHash: bcrypt.hashSync(req.body.password, 8),
-            name: req.body.name,
-            avatarUrl: req.body.avatarUrl,
+            email: formData.email,
+            passwordHash: bcrypt.hashSync(formData.password, 8),
+            firstname: formData.firstname,
+            lastname: formData.lastname,
+            avatarUrl: formData.avatarUrl,
+            gender: formData.gender,
+            birthday: formData.birthday,
+            contacts: formData.contacts,
+            address: formData.address.join(),
           },
         });
         res
@@ -23,6 +30,7 @@ export default async function (req: UmiApiRequest, res: UmiApiResponse) {
         // 处理完请求以后记得断开数据库链接
         await prisma.$disconnect();
       } catch (e: any) {
+        console.log(e);
         res.status(500).json({
           result: false,
           message:
