@@ -1,7 +1,7 @@
 import { PrismaClient } from "@prisma/client";
 import type { UmiApiRequest, UmiApiResponse } from "umi";
 import bcrypt from "bcryptjs";
-import { signToken, verifyToken } from "utils/jwt";
+import { signToken, verifyToken } from "@/utils/jwt";
 
 export default async function (req: UmiApiRequest, res: UmiApiResponse) {
   let prisma: PrismaClient;

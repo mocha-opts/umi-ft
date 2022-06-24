@@ -13,7 +13,13 @@ export default function Layout() {
           <Link to="/docs">Docs</Link>
         </li>
         <li>
-          <Link to="/post">Docs</Link>
+          <Link to="/posts">posts</Link>
+        </li>
+        <li>
+          <Link to="login">login</Link>
+        </li>
+        <li>
+          <Link to="register">register</Link>
         </li>
         <li>
           <a href="https://github.com/umijs/umi">Github</a>

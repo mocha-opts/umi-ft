@@ -23,15 +23,20 @@ model Post {
   authorId  Int
   imageUrl  String?
   tags      String
-  
+
   @@index(authorId)
 }
 
 model User {
-  id           Int     @id @default(autoincrement())
-  email        String  @unique
+  id           Int      @id @default(autoincrement())
+  email        String   @unique
   passwordHash String
-  name         String?
+  firstname    String
+  lastname     String
   posts        Post[]
   avatarUrl    String?
+  gender       Int
+  birthday     String
+  contacts     String
+  address      String
 }
