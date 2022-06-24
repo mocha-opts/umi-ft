@@ -10,8 +10,8 @@ export default {
     { exact: true, path: "/register", component: "register" },
     { exact: true, path: "/posts/:postId", component: "posts/post" },
   ],
-  plugins: [require.resolve("@umijs/plugins/dist/tailwindcss")],
-  tailwindcss: {},
+  // plugins: [require.resolve("@umijs/plugins/dist/tailwindcss")],
+  // tailwindcss: {},
   // dva: {},
   // request: {},
 };
