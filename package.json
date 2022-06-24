@@ -7,12 +7,21 @@
     "start": "npm run dev"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@formily/antd": "^2.1.6",
+    "@formily/core": "^2.1.6",
+    "@formily/react": "^2.1.6",
+    "@formily/reactive": "^2.1.6",
     "@prisma/client": "^3.15.2",
     "@types/bcryptjs": "^2.4.2",
     "@types/jsonwebtoken": "^8.5.8",
     "@upstash/redis": "^1.6.1",
+    "ahooks": "^3.5.0",
+    "antd": "^4.21.3",
+    "axios": "^0.27.2",
     "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.3",
     "umi": "^4.0.0-rc.24"
   },
   "devDependencies": {
