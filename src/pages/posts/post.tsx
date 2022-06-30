@@ -1,13 +1,18 @@
+import { postDetail } from "@/services/api";
+import { useRequest } from "ahooks";
 import React, { useEffect } from "react";
 import styles from "./post.less";
+import { useParams } from "umi";
+
 export default function Page() {
-  useEffect(() => {
-    return () => {};
-  }, []);
+  const params = useParams();
+  console.log(params);
+  const { data: detail, error, loading } = useRequest(() => postDetail(params));
 
   return (
     <div>
-      <h1 className={styles.title}>Page post</h1>
+      <h1 className={styles.title}>{detail?.title}</h1>
+      <div>{detail?.content}</div>
     </div>
   );
 }

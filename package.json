@@ -12,6 +12,7 @@
     "@formily/core": "^2.1.6",
     "@formily/react": "^2.1.6",
     "@formily/reactive": "^2.1.6",
+    "@lexical/react": "^0.3.6",
     "@prisma/client": "^3.15.2",
     "@types/bcryptjs": "^2.4.2",
     "@types/jsonwebtoken": "^8.5.8",
@@ -20,7 +21,9 @@
     "antd": "^4.21.3",
     "axios": "^0.27.2",
     "bcryptjs": "^2.4.3",
+    "braft-editor": "^2.3.9",
     "jsonwebtoken": "^8.5.1",
+    "lexical": "^0.3.6",
     "moment": "^2.29.3",
     "umi": "^4.0.0-rc.24"
   },
