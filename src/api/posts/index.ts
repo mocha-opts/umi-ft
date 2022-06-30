@@ -16,7 +16,7 @@ export default async function (req: UmiApiRequest, res: UmiApiResponse) {
         res.status(200).json(postList);
         await prisma.$disconnect();
       }
-
+      break;
     case "POST":
       if (!req.cookies?.token) {
         return res.status(401).json({

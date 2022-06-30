@@ -54596,6 +54596,7 @@ async function posts_default(req, res) {
         res.status(200).json(postList);
         await prisma2.$disconnect();
       }
+      break;
     case "POST":
       if (!req.cookies?.token) {
         return res.status(401).json({
