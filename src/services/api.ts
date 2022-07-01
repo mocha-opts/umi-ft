@@ -3,7 +3,7 @@ import request from "@/utils/request";
 const serviceName = "api";
 
 export const listPost = (payload: any) =>
-  request.post(`/posts`, {
+  request.get(`/posts`, {
     data: {
       ...payload,
     },
