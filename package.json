@@ -17,14 +17,16 @@
     "@types/bcryptjs": "^2.4.2",
     "@types/jsonwebtoken": "^8.5.8",
     "@upstash/redis": "^1.6.1",
+    "@wangeditor/editor": "^5.1.1",
+    "@wangeditor/editor-for-react": "^1.0.4",
     "ahooks": "^3.5.0",
     "antd": "^4.21.3",
     "axios": "^0.27.2",
     "bcryptjs": "^2.4.3",
-    "braft-editor": "^2.3.9",
     "jsonwebtoken": "^8.5.1",
-    "lexical": "^0.3.6",
+    "lottie-web": "^5.9.5",
     "moment": "^2.29.3",
+    "puppeteer": "^15.2.0",
     "umi": "^4.0.0-rc.24"
   },
   "devDependencies": {
