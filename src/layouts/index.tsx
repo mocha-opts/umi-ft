@@ -13,9 +13,6 @@ export default function Layout() {
           <Link to="/posts/create">Create</Link>
         </li>
         <li>
-          <Link to="/posts">posts</Link>
-        </li>
-        <li>
           <Link to="login">login</Link>
         </li>
         <li>
