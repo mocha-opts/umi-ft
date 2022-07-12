@@ -31,3 +31,5 @@ export const login = (payload: Password) => {
     },
   });
 };
+
+export const name = 1 ;
