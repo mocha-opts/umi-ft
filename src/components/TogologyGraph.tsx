@@ -44,7 +44,7 @@ export const TopologyGraph: React.FC<{}> = () => {
       run(node);
     });
 
-    fetch("./mindmap.json")
+    fetch("/api/mindmap")
       .then((response) => response.json())
       .then((data) => {
         const start = new Date().getTime();
@@ -80,5 +80,5 @@ export const TopologyGraph: React.FC<{}> = () => {
       });
   }, []);
 
-  return <div id="container"></div>;
+  return <div id="container" style={{ height: "500px" }}></div>;
 };
