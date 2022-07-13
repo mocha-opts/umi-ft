@@ -8,6 +8,9 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
+    "@antv/layout": "^0.2.5",
+    "@antv/x6": "^1.32.8",
+    "@antv/x6-react-components": "^1.1.15",
     "@formily/antd": "^2.1.6",
     "@formily/core": "^2.1.6",
     "@formily/react": "^2.1.6",
