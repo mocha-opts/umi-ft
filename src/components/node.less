@@ -1,0 +1,60 @@
+.archer-snapshot-card {
+  width: 276px;
+  height: 84px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  border: 1px dashed #c7d0d6;
+  background-color: #fff;
+
+  .archer-snapshot-card-content {
+    position: relative;
+    width: 260px;
+    height: 68px;
+    border-radius: 3px;
+    background-color: #f5f8fa;
+    padding: 12px;
+    .archer-snapshot-card-tag {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 44px;
+      height: 24px;
+      border-width: 0 0 2px 2px ;
+      border-color: #fff;
+      border-style: solid;
+      border-radius: 0 3px 0 12px;
+      text-align: center;
+      vertical-align: middle;
+      background-color: #e6f1fd;
+      color: #4c8cca;
+      font-size: 12px;
+    }
+    .archer-snapshot-name {
+      font-size: 14px;
+      font-weight: 500;
+      color: #33475b;
+      max-width: 184px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      cursor: default;
+    }
+    .archer-snapshot-label {
+      display: flex;
+      align-items: center;
+      & > button {
+        cursor: default;
+        user-select: none;
+      }
+      .archer-createtime {
+        font-size: 12px;
+        margin-right: 8px;
+      }
+      .archer-snapshot-status-label {
+      }
+    }
+  }
+}

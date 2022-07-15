@@ -1,84 +1,41 @@
-import React, { useEffect } from "react";
-import { Graph } from "@antv/x6";
-const UNIQ_GRAPH_ID = "UNIQ_GRAPH_ID"; // 任意字符串，作为画布的唯一标识。注意：任意两张同时渲染的画布需要有不同的标识
-import { TreeEdge } from "./CustomEdge";
-import { TreeNode } from "./CustomNode";
-export const TopologyGraph: React.FC<{}> = () => {
+import React, { useEffect, useState, useRef } from "react";
+import { Cell, Graph, Node, ToolsView } from "@antv/x6";
+import dagre from "dagre";
+import { Menu, Modal, message, Dropdown } from "antd";
+import { SnapshotNode } from "./SnapshotNode";
+import { registry } from "@antv/x6-react-shape";
+import { RootNodeName } from "./custom";
+import { DeptDrawing } from "./drawing";
+import { getDeptGraphConfig } from "./config";
+export default function TopologyGraph() {
+  const graphDrawing = new DeptDrawing();
+  const conRef = useRef(null);
   useEffect(() => {
-    // 初始化画布
-    const graph = new Graph({
-      container: document.getElementById("container")!,
-      async: true,
-      frozen: true,
-      scroller: true,
-      interacting: false,
-      sorting: "approx",
-      connecting: {
-        anchor: "orth",
-        connector: "rounded",
-        connectionPoint: "boundary",
-        router: {
-          name: "er",
-          args: {
-            offset: 24,
-            direction: "H",
-          },
-        },
-      },
-    });
-
-    graph.on("node:collapse", ({ node }: any) => {
-      node.toggleCollapse();
-      const collapsed = node.isCollapsed();
-      const run = (pre: any) => {
-        const succ = graph.getSuccessors(pre, { distance: 1 });
-        if (succ) {
-          succ.forEach((node: any) => {
-            node.toggleVisible(!collapsed);
-            if (!node.isCollapsed()) {
-              run(node);
-            }
-          });
-        }
-      };
-      run(node);
-    });
-
+    //这里是根据条件来注册自定义节点，然后渲染
+    if (!registry.exist(RootNodeName)) {
+      // registerReactComponent为API接口
+      Graph.registerReactComponent(RootNodeName, (node) => {
+        return <SnapshotNode node={node} graphDrawing={graphDrawing} />;
+      });
+    }
     fetch("/api/mindmap")
-      .then((response) => response.json())
+      .then((res) => res.json())
       .then((data) => {
-        const start = new Date().getTime();
-        const nodes = data.nodes.map(({ leaf, ...metadata }: any) => {
-          const node = new TreeNode(metadata);
-          if (leaf) {
-            node.toggleButtonVisibility(leaf === false);
-          }
-          return node;
-        });
-        const edges = data.edges.map(
-          (edge: any) =>
-            new TreeEdge({
-              source: edge.source,
-              target: edge.target,
-            })
-        );
-
-        graph.resetCells([...nodes, ...edges]);
-
-        graph.unfreeze({
-          progress({ done }) {
-            if (done) {
-              const time = new Date().getTime() - start;
-              console.log(time);
-              graph.unfreeze({
-                batchSize: 50,
-              });
-              graph.zoomToFit({ padding: 24 });
-            }
-          },
-        });
+        //获取数据并处理
+        graphDrawing.loadData(data);
+        console.log(data);
+        //这里getDeptGraphConfig方法是画布的配置
+        graphDrawing.graph = new Graph(getDeptGraphConfig(conRef.current));
+        //渲染画布数据
+        graphDrawing.render();
       });
   }, []);
 
-  return <div id="container" style={{ height: "500px" }}></div>;
-};
+  // //监听数据，实时更新并渲染
+  // useEffect(() => {
+  //   graphDrawing.loadData(data);
+  //   graphDrawing.render();
+  // }, [data]);
+
+  return <div id="container" ref={conRef}></div>;
+}

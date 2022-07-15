@@ -249,714 +249,119 @@ var middlewares_default = async (req, res, next) => {
 // src/components/mindmap.json
 var nodes = [
   {
-    id: 69,
-    shape: "tree-node",
-    width: 70,
-    height: 26,
-    leaf: false,
-    attrs: {
-      label: {
-        textWrap: {
-          text: "fathers"
-        }
-      }
-    },
-    x: 35,
-    y: 97
+    id: "a3519d4a-786f-49d8-b4d6-e67f8843c920",
+    name: "Link_clone_afterfull",
+    ref: "2930ee04-f0d5-4216-adc5-57768f9cc652",
+    parentId: null,
+    resourceType: "VM",
+    description: null,
+    virtualMachineId: null,
+    status: null,
+    size: null,
+    updateTime: null,
+    disk: null,
+    createTime: "2022-07-07 14:08:29",
+    autoSnapshot: null,
+    systemFlag: null,
+    createUserId: null,
+    ownerId: null,
+    zoneId: "b34339f8-0f4a-4dd5-a184-1702d808f157",
+    timerTaskId: null,
+    depth: 0
   },
   {
-    id: 70,
-    shape: "tree-node",
-    width: 28,
-    height: 26,
-    leaf: false,
-    attrs: {
-      label: {
-        textWrap: {
-          text: "0"
-        }
+    id: "471cebc8-116c-42e9-ad74-ba0ffe96eec6",
+    name: "snapcsht-111",
+    ref: "b7b82851-18b0-420a-aa7c-06b365ceaddf",
+    parentId: "a3519d4a-786f-49d8-b4d6-e67f8843c920",
+    resourceType: "SNAPSHOT",
+    description: "",
+    virtualMachineId: "a3519d4a-786f-49d8-b4d6-e67f8843c920",
+    status: "AVAILABLE",
+    size: 20,
+    updateTime: "2022-07-11 11:07:27",
+    disk: [
+      {
+        diskId: "baa2170d-b3dd-4400-a567-76522807b406",
+        diskName: "802b3103-0070-4288-86d8-bfadf561c9c5_clone"
       }
-    },
-    x: 184,
-    y: 97
+    ],
+    createTime: "2022-07-11 11:07:14",
+    autoSnapshot: false,
+    systemFlag: null,
+    createUserId: null,
+    ownerId: null,
+    zoneId: "b34339f8-0f4a-4dd5-a184-1702d808f157",
+    timerTaskId: null,
+    depth: 1
   },
   {
-    id: 71,
-    shape: "tree-node",
-    width: 70,
-    height: 26,
-    leaf: false,
-    attrs: {
-      label: {
-        textWrap: {
-          text: "id"
-        }
+    id: "4e732cf3-1b7e-403f-873e-689bd363200f",
+    name: "snapcsht-222",
+    ref: "7a6c5523-7cf0-4344-93b2-82096d3b6c6b",
+    parentId: "471cebc8-116c-42e9-ad74-ba0ffe96eec6",
+    resourceType: "SNAPSHOT",
+    description: "",
+    virtualMachineId: "a3519d4a-786f-49d8-b4d6-e67f8843c920",
+    status: "AVAILABLE",
+    size: 20,
+    updateTime: "2022-07-12 11:15:22",
+    disk: [
+      {
+        diskId: "baa2170d-b3dd-4400-a567-76522807b406",
+        diskName: "802b3103-0070-4288-86d8-bfadf561c9c5_clone"
       }
-    },
-    x: 333,
-    y: 13
+    ],
+    createTime: "2022-07-12 11:15:18",
+    autoSnapshot: false,
+    systemFlag: null,
+    createUserId: null,
+    ownerId: null,
+    zoneId: "b34339f8-0f4a-4dd5-a184-1702d808f157",
+    timerTaskId: null,
+    depth: 2
   },
   {
-    id: 72,
-    shape: "tree-node",
-    width: 28,
-    height: 26,
-    leaf: true,
-    attrs: {
-      label: {
-        textWrap: {
-          text: 0
-        }
+    id: "e6da396e-e9a5-4335-8442-2d613deb376b",
+    name: "snapcsht-333",
+    ref: "8566f1a8-3a78-40ee-855c-789a529d757d",
+    parentId: "4e732cf3-1b7e-403f-873e-689bd363200f",
+    resourceType: "SNAPSHOT",
+    description: "",
+    virtualMachineId: "a3519d4a-786f-49d8-b4d6-e67f8843c920",
+    status: "AVAILABLE",
+    size: 20,
+    updateTime: "2022-07-12 11:15:51",
+    disk: [
+      {
+        diskId: "baa2170d-b3dd-4400-a567-76522807b406",
+        diskName: "802b3103-0070-4288-86d8-bfadf561c9c5_clone"
       }
-    },
-    x: 503,
-    y: 13
-  },
-  {
-    id: 73,
-    shape: "tree-node",
-    width: 70,
-    height: 26,
-    leaf: false,
-    attrs: {
-      label: {
-        textWrap: {
-          text: "married"
-        }
-      }
-    },
-    x: 333,
-    y: 69
-  },
-  {
-    id: 74,
-    shape: "tree-node",
-    width: 70,
-    height: 26,
-    leaf: true,
-    attrs: {
-      label: {
-        textWrap: {
-          text: false
-        }
-      }
-    },
-    x: 503,
-    y: 69
-  },
-  {
-    id: 75,
-    shape: "tree-node",
-    width: 70,
-    height: 26,
-    leaf: false,
-    attrs: {
-      label: {
-        textWrap: {
-          text: "name"
-        }
-      }
-    },
-    x: 333,
-    y: 125
-  },
-  {
-    id: 76,
-    shape: "tree-node",
-    width: 70,
-    height: 26,
-    leaf: true,
-    attrs: {
-      label: {
-        textWrap: {
-          text: "Eric Taylor"
-        }
-      }
-    },
-    x: 503,
-    y: 125
-  },
-  {
-    id: 77,
-    shape: "tree-node",
-    width: 70,
-    height: 26,
-    leaf: false,
-    attrs: {
-      label: {
-        textWrap: {
-          text: "daughters"
-        }
-      }
-    },
-    x: 333,
-    y: 405
-  },
-  {
-    id: 78,
-    shape: "tree-node",
-    width: 28,
-    height: 26,
-    leaf: false,
-    attrs: {
-      label: {
-        textWrap: {
-          text: "0"
-        }
-      }
-    },
-    x: 503,
-    y: 181
-  },
-  {
-    id: 79,
-    shape: "tree-node",
-    width: 70,
-    height: 26,
-    leaf: false,
-    attrs: {
-      label: {
-        textWrap: {
-          text: "age"
-        }
-      }
-    },
-    x: 673,
-    y: 153
-  },
-  {
-    id: 80,
-    shape: "tree-node",
-    width: 28,
-    height: 26,
-    leaf: true,
-    attrs: {
-      label: {
-        textWrap: {
-          text: 30
-        }
-      }
-    },
-    x: 843,
-    y: 153
-  },
-  {
-    id: 81,
-    shape: "tree-node",
-    width: 70,
-    height: 26,
-    leaf: false,
-    attrs: {
-      label: {
-        textWrap: {
-          text: "name"
-        }
-      }
-    },
-    x: 673,
-    y: 209
-  },
-  {
-    id: 82,
-    shape: "tree-node",
-    width: 70,
-    height: 26,
-    leaf: true,
-    attrs: {
-      label: {
-        textWrap: {
-          text: "Sarah"
-        }
-      }
-    },
-    x: 843,
-    y: 209
-  },
-  {
-    id: 83,
-    shape: "tree-node",
-    width: 28,
-    height: 26,
-    leaf: false,
-    attrs: {
-      label: {
-        textWrap: {
-          text: "1"
-        }
-      }
-    },
-    x: 503,
-    y: 293
-  },
-  {
-    id: 84,
-    shape: "tree-node",
-    width: 70,
-    height: 26,
-    leaf: false,
-    attrs: {
-      label: {
-        textWrap: {
-          text: "age"
-        }
-      }
-    },
-    x: 673,
-    y: 265
-  },
-  {
-    id: 85,
-    shape: "tree-node",
-    width: 28,
-    height: 26,
-    leaf: true,
-    attrs: {
-      label: {
-        textWrap: {
-          text: 6
-        }
-      }
-    },
-    x: 843,
-    y: 265
-  },
-  {
-    id: 86,
-    shape: "tree-node",
-    width: 70,
-    height: 26,
-    leaf: false,
-    attrs: {
-      label: {
-        textWrap: {
-          text: "name"
-        }
-      }
-    },
-    x: 673,
-    y: 321
-  },
-  {
-    id: 87,
-    shape: "tree-node",
-    width: 70,
-    height: 26,
-    leaf: true,
-    attrs: {
-      label: {
-        textWrap: {
-          text: "Cynthia"
-        }
-      }
-    },
-    x: 843,
-    y: 321
-  },
-  {
-    id: 88,
-    shape: "tree-node",
-    width: 28,
-    height: 26,
-    leaf: false,
-    attrs: {
-      label: {
-        textWrap: {
-          text: "2"
-        }
-      }
-    },
-    x: 503,
-    y: 405
-  },
-  {
-    id: 89,
-    shape: "tree-node",
-    width: 70,
-    height: 26,
-    leaf: false,
-    attrs: {
-      label: {
-        textWrap: {
-          text: "age"
-        }
-      }
-    },
-    x: 673,
-    y: 377
-  },
-  {
-    id: 90,
-    shape: "tree-node",
-    width: 28,
-    height: 26,
-    leaf: true,
-    attrs: {
-      label: {
-        textWrap: {
-          text: 15
-        }
-      }
-    },
-    x: 843,
-    y: 377
-  },
-  {
-    id: 91,
-    shape: "tree-node",
-    width: 70,
-    height: 26,
-    leaf: false,
-    attrs: {
-      label: {
-        textWrap: {
-          text: "name"
-        }
-      }
-    },
-    x: 673,
-    y: 433
-  },
-  {
-    id: 92,
-    shape: "tree-node",
-    width: 70,
-    height: 26,
-    leaf: true,
-    attrs: {
-      label: {
-        textWrap: {
-          text: "Linda"
-        }
-      }
-    },
-    x: 843,
-    y: 433
-  },
-  {
-    id: 93,
-    shape: "tree-node",
-    width: 28,
-    height: 26,
-    leaf: false,
-    attrs: {
-      label: {
-        textWrap: {
-          text: "3"
-        }
-      }
-    },
-    x: 503,
-    y: 517
-  },
-  {
-    id: 94,
-    shape: "tree-node",
-    width: 70,
-    height: 26,
-    leaf: false,
-    attrs: {
-      label: {
-        textWrap: {
-          text: "age"
-        }
-      }
-    },
-    x: 673,
-    y: 489
-  },
-  {
-    id: 95,
-    shape: "tree-node",
-    width: 28,
-    height: 26,
-    leaf: true,
-    attrs: {
-      label: {
-        textWrap: {
-          text: 7
-        }
-      }
-    },
-    x: 843,
-    y: 489
-  },
-  {
-    id: 96,
-    shape: "tree-node",
-    width: 70,
-    height: 26,
-    leaf: false,
-    attrs: {
-      label: {
-        textWrap: {
-          text: "name"
-        }
-      }
-    },
-    x: 673,
-    y: 545
-  },
-  {
-    id: 97,
-    shape: "tree-node",
-    width: 70,
-    height: 26,
-    leaf: true,
-    attrs: {
-      label: {
-        textWrap: {
-          text: "Barbara"
-        }
-      }
-    },
-    x: 843,
-    y: 545
-  },
-  {
-    id: 98,
-    shape: "tree-node",
-    width: 28,
-    height: 26,
-    leaf: false,
-    attrs: {
-      label: {
-        textWrap: {
-          text: "4"
-        }
-      }
-    },
-    x: 503,
-    y: 629
-  },
-  {
-    id: 99,
-    shape: "tree-node",
-    width: 70,
-    height: 26,
-    leaf: false,
-    attrs: {
-      label: {
-        textWrap: {
-          text: "age"
-        }
-      }
-    },
-    x: 673,
-    y: 601
-  },
-  {
-    id: 100,
-    shape: "tree-node",
-    width: 28,
-    height: 26,
-    leaf: true,
-    attrs: {
-      label: {
-        textWrap: {
-          text: 18
-        }
-      }
-    },
-    x: 843,
-    y: 601
-  },
-  {
-    id: 101,
-    shape: "tree-node",
-    width: 70,
-    height: 26,
-    leaf: false,
-    attrs: {
-      label: {
-        textWrap: {
-          text: "name"
-        }
-      }
-    },
-    x: 673,
-    y: 657
-  },
-  {
-    id: 102,
-    shape: "tree-node",
-    width: 70,
-    height: 26,
-    leaf: true,
-    attrs: {
-      label: {
-        textWrap: {
-          text: "Margaret"
-        }
-      }
-    },
-    x: 843,
-    y: 657
+    ],
+    createTime: "2022-07-12 11:15:41",
+    autoSnapshot: false,
+    systemFlag: null,
+    createUserId: null,
+    ownerId: null,
+    zoneId: "b34339f8-0f4a-4dd5-a184-1702d808f157",
+    timerTaskId: null,
+    depth: 3
   }
 ];
 var edges = [
   {
-    source: 69,
-    target: 70,
+    source: "4e732cf3-1b7e-403f-873e-689bd363200f",
+    target: "e6da396e-e9a5-4335-8442-2d613deb376b",
     shape: "tree-edge"
   },
   {
-    source: 70,
-    target: 71,
+    source: "471cebc8-116c-42e9-ad74-ba0ffe96eec6",
+    target: "4e732cf3-1b7e-403f-873e-689bd363200f",
     shape: "tree-edge"
   },
   {
-    source: 71,
-    target: 72,
-    shape: "tree-edge"
-  },
-  {
-    source: 70,
-    target: 73,
-    shape: "tree-edge"
-  },
-  {
-    source: 73,
-    target: 74,
-    shape: "tree-edge"
-  },
-  {
-    source: 70,
-    target: 75,
-    shape: "tree-edge"
-  },
-  {
-    source: 75,
-    target: 76,
-    shape: "tree-edge"
-  },
-  {
-    source: 70,
-    target: 77,
-    shape: "tree-edge"
-  },
-  {
-    source: 77,
-    target: 78,
-    shape: "tree-edge"
-  },
-  {
-    source: 78,
-    target: 79,
-    shape: "tree-edge"
-  },
-  {
-    source: 79,
-    target: 80,
-    shape: "tree-edge"
-  },
-  {
-    source: 78,
-    target: 81,
-    shape: "tree-edge"
-  },
-  {
-    source: 81,
-    target: 82,
-    shape: "tree-edge"
-  },
-  {
-    source: 77,
-    target: 83,
-    shape: "tree-edge"
-  },
-  {
-    source: 83,
-    target: 84,
-    shape: "tree-edge"
-  },
-  {
-    source: 84,
-    target: 85,
-    shape: "tree-edge"
-  },
-  {
-    source: 83,
-    target: 86,
-    shape: "tree-edge"
-  },
-  {
-    source: 86,
-    target: 87,
-    shape: "tree-edge"
-  },
-  {
-    source: 77,
-    target: 88,
-    shape: "tree-edge"
-  },
-  {
-    source: 88,
-    target: 89,
-    shape: "tree-edge"
-  },
-  {
-    source: 89,
-    target: 90,
-    shape: "tree-edge"
-  },
-  {
-    source: 88,
-    target: 91,
-    shape: "tree-edge"
-  },
-  {
-    source: 91,
-    target: 92,
-    shape: "tree-edge"
-  },
-  {
-    source: 77,
-    target: 93,
-    shape: "tree-edge"
-  },
-  {
-    source: 93,
-    target: 94,
-    shape: "tree-edge"
-  },
-  {
-    source: 94,
-    target: 95,
-    shape: "tree-edge"
-  },
-  {
-    source: 93,
-    target: 96,
-    shape: "tree-edge"
-  },
-  {
-    source: 96,
-    target: 97,
-    shape: "tree-edge"
-  },
-  {
-    source: 77,
-    target: 98,
-    shape: "tree-edge"
-  },
-  {
-    source: 98,
-    target: 99,
-    shape: "tree-edge"
-  },
-  {
-    source: 99,
-    target: 100,
-    shape: "tree-edge"
-  },
-  {
-    source: 98,
-    target: 101,
-    shape: "tree-edge"
-  },
-  {
-    source: 101,
-    target: 102,
+    source: "a3519d4a-786f-49d8-b4d6-e67f8843c920",
+    target: "471cebc8-116c-42e9-ad74-ba0ffe96eec6",
     shape: "tree-edge"
   }
 ];
@@ -972,7 +377,7 @@ async function mindmap_default2(req, res) {
 
 // src/.umi/api/mindmap.ts
 var import_apiRoute = __toESM(require_apiRoute());
-var apiRoutes = [{ "path": "posts/[postId]", "id": "posts/[postId]", "file": "posts/[postId].ts", "absPath": "/posts/[postId]", "__content": 'import type { UmiApiRequest, UmiApiResponse } from "umi";\r\nimport { PrismaClient } from "@prisma/client";\r\n// import { Redis } from "@upstash/redis";\r\n\r\nexport default async function (req: UmiApiRequest, res: UmiApiResponse) {\r\n  let prisma: PrismaClient;\r\n  switch (req.method) {\r\n    case "GET":\r\n      // const redis = Redis.fromEnv();\r\n      // let post = await redis.get("post-" + req.params.postId);\r\n      // if (post) {\r\n      //   res.status(200).json(post);\r\n      //   return;\r\n      // }\r\n      // if (!post) {\r\n      prisma = new PrismaClient();\r\n      let post = await prisma.post.findUnique({\r\n        where: { id: +req.params.postId },\r\n        include: { author: true },\r\n      });\r\n      if (post) {\r\n        res.status(200).json(post);\r\n      } else {\r\n        res.status(404).json({ error: "Post not found." });\r\n      }\r\n      // await redis.set("post-" + req.params.postId, JSON.stringify(post));\r\n      await prisma.$disconnect();\r\n\r\n      break;\r\n    default:\r\n      console.log("");\r\n      break;\r\n  }\r\n}\r\n' }, { "path": "user/[userId]", "id": "user/[userId]", "file": "user/[userId].ts", "absPath": "/user/[userId]", "__content": 'import type { UmiApiRequest, UmiApiResponse } from "umi";\r\nimport { PrismaClient } from "@prisma/client";\r\n\r\nexport default async function (req: UmiApiRequest, res: UmiApiResponse) {\r\n  switch (req.method) {\r\n    case "GET":\r\n      const prisma = new PrismaClient();\r\n      const user = await prisma.user.findUnique({\r\n        where: { id: +req.params.userId },\r\n      });\r\n      res.status(200).json(user);\r\n      await prisma.$disconnect();\r\n      break;\r\n    default:\r\n      res.status(405).json({ error: "Method not allowed" });\r\n  }\r\n}\r\n' }, { "path": "posts", "id": "posts/index", "file": "posts/index.ts", "absPath": "/posts", "__content": 'import { PrismaClient } from "@prisma/client";\r\nimport type { UmiApiRequest, UmiApiResponse } from "umi";\r\nimport bcrypt from "bcryptjs";\r\nimport { signToken, verifyToken } from "@/utils/jwt";\r\n\r\nexport default async function (req: UmiApiRequest, res: UmiApiResponse) {\r\n  let prisma: PrismaClient;\r\n  switch (req.method) {\r\n    case "GET":\r\n      let prisma = new PrismaClient();\r\n\r\n      const postList = await prisma.post.findMany({\r\n        include: { author: true },\r\n      });\r\n      if (postList?.length > 0) {\r\n        res.status(200).json(postList);\r\n        await prisma.$disconnect();\r\n      }\r\n      break;\r\n    case "POST":\r\n      if (!req.cookies?.token) {\r\n        return res.status(401).json({\r\n          message: "Unauthorized",\r\n        });\r\n      }\r\n      const authorId = (await verifyToken(req.cookies.token)).id;\r\n      prisma = new PrismaClient();\r\n      const newPost = await prisma.post.create({\r\n        data: {\r\n          title: req.body.title,\r\n          content: req.body.content,\r\n          createdAt: new Date(),\r\n          authorId,\r\n          tags: req.body.tags.join(","),\r\n          imageUrl: req.body.imageUrl,\r\n        },\r\n      });\r\n      res.status(200).json(newPost);\r\n      await prisma.$disconnect();\r\n      break;\r\n    default:\r\n      // \u5982\u679C\u4E0D\u662F POST \u8BF7\u6C42\uFF0C\u4EE3\u8868\u4ED6\u6B63\u5728\u7528\u9519\u8BEF\u7684\u65B9\u5F0F\u8BBF\u95EE\u8FD9\u4E2A API\r\n      res.status(405).json({ error: "Method not allowed" });\r\n      break;\r\n  }\r\n}\r\n' }, { "path": "user", "id": "user/index", "file": "user/index.ts", "absPath": "/user", "__content": 'import type { UmiApiRequest, UmiApiResponse } from "umi";\r\nimport { PrismaClient } from "@prisma/client";\r\n\r\nexport default async function (req: UmiApiRequest, res: UmiApiResponse) {\r\n  switch (req.method) {\r\n    case "GET":\r\n      const prisma = new PrismaClient();\r\n      const allUsers = await prisma.user.findMany({\r\n        select: {\r\n          id: true,\r\n          name: true,\r\n          email: true,\r\n          avatarUrl: true,\r\n          passwordHash: false,\r\n        },\r\n      });\r\n      res.status(200).json(allUsers);\r\n      await prisma.$disconnect();\r\n      break;\r\n    default:\r\n      res.status(405).json({ error: "Method not allowed" });\r\n  }\r\n}\r\n' }, { "path": "register", "id": "register", "file": "register.ts", "absPath": "/register", "__content": 'import type { UmiApiRequest, UmiApiResponse } from "umi";\r\nimport { PrismaClient } from "@prisma/client";\r\nimport bcrypt from "bcryptjs";\r\nimport { signToken } from "@/utils/jwt";\r\n\r\nexport default async function (req: UmiApiRequest, res: UmiApiResponse) {\r\n  switch (req.method) {\r\n    case "POST":\r\n      try {\r\n        const prisma = new PrismaClient();\r\n        // const formData = JSON.parse(req.body).data;\r\n        const formData = req.body.data;\r\n        const user = await prisma.user.create({\r\n          data: {\r\n            email: formData.email,\r\n            passwordHash: bcrypt.hashSync(formData.password, 8),\r\n            firstname: formData.firstname,\r\n            lastname: formData.lastname,\r\n            avatarUrl: formData.avatarUrl,\r\n            gender: formData.gender,\r\n            birthday: formData.birthday,\r\n            contacts: formData.contacts,\r\n            address: formData.address.join(),\r\n          },\r\n        });\r\n        res\r\n          .status(201)\r\n          .setCookie("token", await signToken(user.id))\r\n          .json({ ...user, passwordHash: undefined });\r\n        // \u5904\u7406\u5B8C\u8BF7\u6C42\u4EE5\u540E\u8BB0\u5F97\u65AD\u5F00\u6570\u636E\u5E93\u94FE\u63A5\r\n        await prisma.$disconnect();\r\n      } catch (e: any) {\r\n        console.log(e);\r\n        res.status(500).json({\r\n          result: false,\r\n          message:\r\n            typeof e.code === "string"\r\n              ? "https://www.prisma.io/docs/reference/api-reference/error-reference#" +\r\n                e.code.toLowerCase()\r\n              : e,\r\n        });\r\n      }\r\n      break;\r\n    default:\r\n      // \u5982\u679C\u4E0D\u662F POST \u8BF7\u6C42\uFF0C\u4EE3\u8868\u4ED6\u6B63\u5728\u7528\u9519\u8BEF\u7684\u65B9\u5F0F\u8BBF\u95EE\u8FD9\u4E2A API\r\n      res.status(405).json({ error: "Method not allowed" });\r\n  }\r\n}\r\n' }, { "path": "mindmap", "id": "mindmap", "file": "mindmap.ts", "absPath": "/mindmap", "__content": "" }, { "path": "/", "id": "index", "file": "index.ts", "absPath": "/", "__content": 'import type { UmiApiRequest, UmiApiResponse } from "umi";\r\n\r\nexport default async function (req: UmiApiRequest, res: UmiApiResponse) {\r\n  res.status(200).json({\r\n    posts_url: req.headers.host + "/api/posts",\r\n    post_url: req.headers.host + "/api/posts/{post_id}",\r\n    users_url: req.headers.host + "/api/users",\r\n    user_url: req.headers.host + "/api/users/{user_id}",\r\n  });\r\n}\r\n' }, { "path": "login", "id": "login", "file": "login.ts", "absPath": "/login", "__content": 'import { PrismaClient } from "@prisma/client";\r\nimport type { UmiApiRequest, UmiApiResponse } from "umi";\r\nimport bcrypt from "bcryptjs";\r\nimport { signToken } from "@/utils/jwt";\r\n\r\nexport default async function (req: UmiApiRequest, res: UmiApiResponse) {\r\n  switch (req.method) {\r\n    case "POST":\r\n      try {\r\n        const prisma = new PrismaClient();\r\n        const user = await prisma.user.findUnique({\r\n          where: { email: req.body.email },\r\n        });\r\n        if (\r\n          !user ||\r\n          !bcrypt.compareSync(req.body.password, user.passwordHash)\r\n        ) {\r\n          return res.status(401).json({\r\n            message: "Invalid email or password",\r\n          });\r\n        }\r\n        res\r\n          .status(200)\r\n          .setCookie("token", await signToken(user.id))\r\n          .json({ ...user, passwordHash: undefined });\r\n        // \u5904\u7406\u5B8C\u8BF7\u6C42\u4EE5\u540E\u8BB0\u5F97\u65AD\u5F00\u6570\u636E\u5E93\u94FE\u63A5\r\n        await prisma.$disconnect();\r\n      } catch (e: any) {\r\n        res.status(500).json({\r\n          result: false,\r\n          message:\r\n            typeof e.code === "string"\r\n              ? "https://www.prisma.io/docs/reference/api-reference/error-reference#" +\r\n                e.code.toLowerCase()\r\n              : e,\r\n        });\r\n      }\r\n      break;\r\n    default:\r\n      // \u5982\u679C\u4E0D\u662F POST \u8BF7\u6C42\uFF0C\u4EE3\u8868\u4ED6\u6B63\u5728\u7528\u9519\u8BEF\u7684\u65B9\u5F0F\u8BBF\u95EE\u8FD9\u4E2A API\r\n      res.status(405).json({ error: "Method not allowed" });\r\n  }\r\n}\r\n' }];
+var apiRoutes = [{ "path": "posts/[postId]", "id": "posts/[postId]", "file": "posts/[postId].ts", "absPath": "/posts/[postId]", "__content": 'import type { UmiApiRequest, UmiApiResponse } from "umi";\r\nimport { PrismaClient } from "@prisma/client";\r\n// import { Redis } from "@upstash/redis";\r\n\r\nexport default async function (req: UmiApiRequest, res: UmiApiResponse) {\r\n  let prisma: PrismaClient;\r\n  switch (req.method) {\r\n    case "GET":\r\n      // const redis = Redis.fromEnv();\r\n      // let post = await redis.get("post-" + req.params.postId);\r\n      // if (post) {\r\n      //   res.status(200).json(post);\r\n      //   return;\r\n      // }\r\n      // if (!post) {\r\n      prisma = new PrismaClient();\r\n      let post = await prisma.post.findUnique({\r\n        where: { id: +req.params.postId },\r\n        include: { author: true },\r\n      });\r\n      if (post) {\r\n        res.status(200).json(post);\r\n      } else {\r\n        res.status(404).json({ error: "Post not found." });\r\n      }\r\n      // await redis.set("post-" + req.params.postId, JSON.stringify(post));\r\n      await prisma.$disconnect();\r\n\r\n      break;\r\n    default:\r\n      console.log("");\r\n      break;\r\n  }\r\n}\r\n' }, { "path": "user/[userId]", "id": "user/[userId]", "file": "user/[userId].ts", "absPath": "/user/[userId]", "__content": 'import type { UmiApiRequest, UmiApiResponse } from "umi";\r\nimport { PrismaClient } from "@prisma/client";\r\n\r\nexport default async function (req: UmiApiRequest, res: UmiApiResponse) {\r\n  switch (req.method) {\r\n    case "GET":\r\n      const prisma = new PrismaClient();\r\n      const user = await prisma.user.findUnique({\r\n        where: { id: +req.params.userId },\r\n      });\r\n      res.status(200).json(user);\r\n      await prisma.$disconnect();\r\n      break;\r\n    default:\r\n      res.status(405).json({ error: "Method not allowed" });\r\n  }\r\n}\r\n' }, { "path": "posts", "id": "posts/index", "file": "posts/index.ts", "absPath": "/posts", "__content": 'import { PrismaClient } from "@prisma/client";\r\nimport type { UmiApiRequest, UmiApiResponse } from "umi";\r\nimport bcrypt from "bcryptjs";\r\nimport { signToken, verifyToken } from "@/utils/jwt";\r\n\r\nexport default async function (req: UmiApiRequest, res: UmiApiResponse) {\r\n  let prisma: PrismaClient;\r\n  switch (req.method) {\r\n    case "GET":\r\n      let prisma = new PrismaClient();\r\n\r\n      const postList = await prisma.post.findMany({\r\n        include: { author: true },\r\n      });\r\n      if (postList?.length > 0) {\r\n        res.status(200).json(postList);\r\n        await prisma.$disconnect();\r\n      }\r\n      break;\r\n    case "POST":\r\n      if (!req.cookies?.token) {\r\n        return res.status(401).json({\r\n          message: "Unauthorized",\r\n        });\r\n      }\r\n      const authorId = (await verifyToken(req.cookies.token)).id;\r\n      prisma = new PrismaClient();\r\n      const newPost = await prisma.post.create({\r\n        data: {\r\n          title: req.body.title,\r\n          content: req.body.content,\r\n          createdAt: new Date(),\r\n          authorId,\r\n          tags: req.body.tags.join(","),\r\n          imageUrl: req.body.imageUrl,\r\n        },\r\n      });\r\n      res.status(200).json(newPost);\r\n      await prisma.$disconnect();\r\n      break;\r\n    default:\r\n      // \u5982\u679C\u4E0D\u662F POST \u8BF7\u6C42\uFF0C\u4EE3\u8868\u4ED6\u6B63\u5728\u7528\u9519\u8BEF\u7684\u65B9\u5F0F\u8BBF\u95EE\u8FD9\u4E2A API\r\n      res.status(405).json({ error: "Method not allowed" });\r\n      break;\r\n  }\r\n}\r\n' }, { "path": "user", "id": "user/index", "file": "user/index.ts", "absPath": "/user", "__content": 'import type { UmiApiRequest, UmiApiResponse } from "umi";\r\nimport { PrismaClient } from "@prisma/client";\r\n\r\nexport default async function (req: UmiApiRequest, res: UmiApiResponse) {\r\n  switch (req.method) {\r\n    case "GET":\r\n      const prisma = new PrismaClient();\r\n      const allUsers = await prisma.user.findMany({\r\n        select: {\r\n          id: true,\r\n          name: true,\r\n          email: true,\r\n          avatarUrl: true,\r\n          passwordHash: false,\r\n        },\r\n      });\r\n      res.status(200).json(allUsers);\r\n      await prisma.$disconnect();\r\n      break;\r\n    default:\r\n      res.status(405).json({ error: "Method not allowed" });\r\n  }\r\n}\r\n' }, { "path": "register", "id": "register", "file": "register.ts", "absPath": "/register", "__content": 'import type { UmiApiRequest, UmiApiResponse } from "umi";\r\nimport { PrismaClient } from "@prisma/client";\r\nimport bcrypt from "bcryptjs";\r\nimport { signToken } from "@/utils/jwt";\r\n\r\nexport default async function (req: UmiApiRequest, res: UmiApiResponse) {\r\n  switch (req.method) {\r\n    case "POST":\r\n      try {\r\n        const prisma = new PrismaClient();\r\n        // const formData = JSON.parse(req.body).data;\r\n        const formData = req.body.data;\r\n        const user = await prisma.user.create({\r\n          data: {\r\n            email: formData.email,\r\n            passwordHash: bcrypt.hashSync(formData.password, 8),\r\n            firstname: formData.firstname,\r\n            lastname: formData.lastname,\r\n            avatarUrl: formData.avatarUrl,\r\n            gender: formData.gender,\r\n            birthday: formData.birthday,\r\n            contacts: formData.contacts,\r\n            address: formData.address.join(),\r\n          },\r\n        });\r\n        res\r\n          .status(201)\r\n          .setCookie("token", await signToken(user.id))\r\n          .json({ ...user, passwordHash: undefined });\r\n        // \u5904\u7406\u5B8C\u8BF7\u6C42\u4EE5\u540E\u8BB0\u5F97\u65AD\u5F00\u6570\u636E\u5E93\u94FE\u63A5\r\n        await prisma.$disconnect();\r\n      } catch (e: any) {\r\n        console.log(e);\r\n        res.status(500).json({\r\n          result: false,\r\n          message:\r\n            typeof e.code === "string"\r\n              ? "https://www.prisma.io/docs/reference/api-reference/error-reference#" +\r\n                e.code.toLowerCase()\r\n              : e,\r\n        });\r\n      }\r\n      break;\r\n    default:\r\n      // \u5982\u679C\u4E0D\u662F POST \u8BF7\u6C42\uFF0C\u4EE3\u8868\u4ED6\u6B63\u5728\u7528\u9519\u8BEF\u7684\u65B9\u5F0F\u8BBF\u95EE\u8FD9\u4E2A API\r\n      res.status(405).json({ error: "Method not allowed" });\r\n  }\r\n}\r\n' }, { "path": "mindmap", "id": "mindmap", "file": "mindmap.ts", "absPath": "/mindmap", "__content": 'import type { UmiApiRequest, UmiApiResponse } from "umi";\r\nimport data from "src/components/mindmap.json";\r\n\r\nexport default async function (req: UmiApiRequest, res: UmiApiResponse) {\r\n  res.status(200).json(data);\r\n}\r\n' }, { "path": "/", "id": "index", "file": "index.ts", "absPath": "/", "__content": 'import type { UmiApiRequest, UmiApiResponse } from "umi";\r\n\r\nexport default async function (req: UmiApiRequest, res: UmiApiResponse) {\r\n  res.status(200).json({\r\n    posts_url: req.headers.host + "/api/posts",\r\n    post_url: req.headers.host + "/api/posts/{post_id}",\r\n    users_url: req.headers.host + "/api/users",\r\n    user_url: req.headers.host + "/api/users/{user_id}",\r\n  });\r\n}\r\n' }, { "path": "login", "id": "login", "file": "login.ts", "absPath": "/login", "__content": 'import { PrismaClient } from "@prisma/client";\r\nimport type { UmiApiRequest, UmiApiResponse } from "umi";\r\nimport bcrypt from "bcryptjs";\r\nimport { signToken } from "@/utils/jwt";\r\n\r\nexport default async function (req: UmiApiRequest, res: UmiApiResponse) {\r\n  switch (req.method) {\r\n    case "POST":\r\n      try {\r\n        const prisma = new PrismaClient();\r\n        const user = await prisma.user.findUnique({\r\n          where: { email: req.body.email },\r\n        });\r\n        if (\r\n          !user ||\r\n          !bcrypt.compareSync(req.body.password, user.passwordHash)\r\n        ) {\r\n          return res.status(401).json({\r\n            message: "Invalid email or password",\r\n          });\r\n        }\r\n        res\r\n          .status(200)\r\n          .setCookie("token", await signToken(user.id))\r\n          .json({ ...user, passwordHash: undefined });\r\n        // \u5904\u7406\u5B8C\u8BF7\u6C42\u4EE5\u540E\u8BB0\u5F97\u65AD\u5F00\u6570\u636E\u5E93\u94FE\u63A5\r\n        await prisma.$disconnect();\r\n      } catch (e: any) {\r\n        res.status(500).json({\r\n          result: false,\r\n          message:\r\n            typeof e.code === "string"\r\n              ? "https://www.prisma.io/docs/reference/api-reference/error-reference#" +\r\n                e.code.toLowerCase()\r\n              : e,\r\n        });\r\n      }\r\n      break;\r\n    default:\r\n      // \u5982\u679C\u4E0D\u662F POST \u8BF7\u6C42\uFF0C\u4EE3\u8868\u4ED6\u6B63\u5728\u7528\u9519\u8BEF\u7684\u65B9\u5F0F\u8BBF\u95EE\u8FD9\u4E2A API\r\n      res.status(405).json({ error: "Method not allowed" });\r\n  }\r\n}\r\n' }];
 var mindmap_default3 = async (req, res) => {
   const umiReq = new import_apiRoute.UmiApiRequest(req, apiRoutes);
   await umiReq.readBody();

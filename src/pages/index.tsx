@@ -4,7 +4,7 @@ import { useRequest } from "ahooks";
 import { listPost } from "@/services/api";
 import "antd/dist/antd.less";
 import type { Post } from "@/utils/types";
-import { TopologyGraph } from "@/components/TogologyGraph";
+import TopologyGraph from "@/components/TogologyGraph";
 export default function HomePage() {
   // const { data: posts, error, loading } = useRequest(listPost);
   return (
