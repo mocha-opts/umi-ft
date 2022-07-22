@@ -7,13 +7,13 @@ export const deptDrawing = new DeptDrawing();
 export const getDeptGraphConfig = (container: any) => {
   return {
     container,
-    width: 1300,
+    width: 1200,
     height: 487,
     autoResize: true,
     interactiong: false,
     mousewheel: {
       enabled: true,
-      modifiers: "ctrl",
+      // modifiers: "ctrl",
       factor: 1.1,
       maxScale: 2,
       minScale: 0.5,
@@ -33,10 +33,11 @@ export const getDeptGraphConfig = (container: any) => {
       visible: false, //是否渲染网格背景
     },
     scroller: {
-      enabled: true,
-      pannable: true,
-      maxWidth: 1400, //画布最大宽度
+      enabled: false,
+      pannable: false,
+      maxWidth: 1200, //画布最大宽度
     },
+    panning: true,
   };
 };
 
