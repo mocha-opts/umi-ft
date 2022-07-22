@@ -30,12 +30,14 @@
     "dagre": "^0.8.5",
     "jsonwebtoken": "^8.5.1",
     "lottie-web": "^5.9.5",
+    "mockjs": "^1.1.0",
     "moment": "^2.29.3",
     "puppeteer": "^15.2.0",
     "umi": "^4.0.0-rc.24"
   },
   "devDependencies": {
     "@types/dagre": "^0.7.47",
+    "@types/mockjs": "^1.0.6",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@umijs/plugins": "^4.0.0",

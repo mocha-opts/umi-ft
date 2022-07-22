@@ -14,4 +14,5 @@ export default {
   // tailwindcss: {},
   // dva: {},
   // request: {},
+  mock: false,
 };
