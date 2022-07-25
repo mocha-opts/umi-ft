@@ -19,7 +19,7 @@ export default function Layout() {
           <Link to="register">register</Link>
         </li>
         <li>
-          <a href="https://github.com/umijs/umi">Github</a>
+          <Link to="topology">topology</Link>
         </li>
       </ul>
       <Outlet />

@@ -1,6 +1,5 @@
-import { Password } from "@formily/antd";
 import request from "@/utils/request";
-
+import type { Password } from "@/types/login";
 const serviceName = "api";
 
 export const listPost = (payload: any) =>
@@ -19,17 +18,10 @@ export const register = (payload: any) =>
     },
   });
 
-type Password = {
-  username: string;
-  password: string;
-};
-
 export const login = (payload: Password) => {
   request.post("/login", {
-    data: {
-      ...payload,
-    },
+    ...payload,
   });
 };
 
-export const name = 1 ;
+export const name = 1;

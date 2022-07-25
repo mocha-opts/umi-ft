@@ -7,6 +7,7 @@ export default async function (req: UmiApiRequest, res: UmiApiResponse) {
   switch (req.method) {
     case "POST":
       try {
+
         const prisma = new PrismaClient();
         const user = await prisma.user.findUnique({
           where: { email: req.body.email },

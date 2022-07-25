@@ -37,5 +37,11 @@ export default function TopologyGraph() {
   //   graphDrawing.render();
   // }, [data]);
 
-  return <div id="container" ref={conRef}></div>;
+  return (
+    <div
+      id="container"
+      ref={conRef}
+      style={{ border: "1px solid grey", marginLeft: "20px" }}
+    ></div>
+  );
 }

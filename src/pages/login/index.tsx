@@ -1,20 +1,16 @@
 import React from "react";
-import { createForm } from "@formily/core";
-import { Field } from "@formily/react";
+
 import { Form, FormItem, Input, Password, Submit } from "@formily/antd";
 import { Tabs, Card } from "antd";
-import { UserOutlined, LockOutlined, PhoneOutlined } from "@ant-design/icons";
-import { VerifyCode } from "@/components/VerifyCode";
-
-const normalForm = createForm({
-  validateFirst: true,
-});
-
-const phoneForm = createForm({
-  validateFirst: true,
-});
+import * as ICONS from "@ant-design/icons";
+import { login } from "@/services/api";
+import type { Password as PasswordType } from "@/types/login";
+import { normalSchema, SchemaField } from "./config";
 
 export default () => {
+  const handleLogin = ({ password, email }: PasswordType) => {
+    login({ password, email });
+  };
   return (
     <div
       style={{
@@ -31,32 +27,9 @@ export default () => {
               form={normalForm}
               layout="vertical"
               size="large"
-              onAutoSubmit={console.log}
+              onAutoSubmit={handleLogin}
             >
-              <Field
-                name="username"
-                title="Username"
-                required
-                decorator={[FormItem]}
-                component={[
-                  Input,
-                  {
-                    prefix: <UserOutlined />,
-                  },
-                ]}
-              />
-              <Field
-                name="password"
-                title="Password"
-                required
-                decorator={[FormItem]}
-                component={[
-                  Password,
-                  {
-                    prefix: <LockOutlined />,
-                  },
-                ]}
-              />
+              <SchemaField schema={normalSchema} />
               <Submit block size="large">
                 Log in
               </Submit>
@@ -69,38 +42,7 @@ export default () => {
               size="large"
               onAutoSubmit={console.log}
             >
-              <Field
-                name="phone"
-                title="Phone Number"
-                required
-                validator="phone"
-                decorator={[FormItem]}
-                component={[
-                  Input,
-                  {
-                    prefix: <PhoneOutlined />,
-                  },
-                ]}
-              />
-              <Field
-                name="verifyCode"
-                title="Verification Code"
-                required
-                reactions={(field) => {
-                  const phone = field.query(".phone");
-                  field.setComponentProps({
-                    readyPost: phone.get("valid") && phone.get("value"),
-                    phoneNumber: phone.get("value"),
-                  });
-                }}
-                decorator={[FormItem]}
-                component={[
-                  VerifyCode,
-                  {
-                    prefix: <LockOutlined />,
-                  },
-                ]}
-              />
+              <SchemaField schema={phoneSchema} />
               <Submit block size="large">
                 Log in
               </Submit>
@@ -120,19 +62,3 @@ export default () => {
     </div>
   );
 };
-
-/*
-form(onsubmit="return false")
-  .form-item
-    label Username
-    .input-wrapper
-      input(type="text" id="username" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-lpignore="true")
-  .form-item
-    label Password
-    .input-wrapper
-      input(type="password" id="password" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-lpignore="true")
-      button(type="button" id="eyeball")
-        .eye
-      #beam
-  button(id="submit") Sign in
-*/
