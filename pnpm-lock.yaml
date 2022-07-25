@@ -18,6 +18,7 @@ specifiers:
   '@types/mockjs': ^1.0.6
   '@types/react': ^18.0.0
   '@types/react-dom': ^18.0.0
+  '@types/redux-logger': ^3.0.9
   '@umijs/plugins': ^4.0.0
   '@upstash/redis': ^1.6.1
   '@wangeditor/editor': ^5.1.1
@@ -33,6 +34,7 @@ specifiers:
   moment: ^2.29.3
   prisma: ^3.15.2
   puppeteer: ^15.2.0
+  redux-logger: ^3.0.6
   tailwindcss: ^3
   typescript: ^4.1.2
   umi: ^4.0.0-rc.24
@@ -64,6 +66,7 @@ dependencies:
   mockjs: 1.1.0
   moment: 2.29.3
   puppeteer: 15.2.0
+  redux-logger: 3.0.6
   umi: 4.0.0_typescript@4.7.4
 
 devDependencies:
@@ -71,6 +74,7 @@ devDependencies:
   '@types/mockjs': 1.0.6
   '@types/react': 18.0.14
   '@types/react-dom': 18.0.5
+  '@types/redux-logger': 3.0.9
   '@umijs/plugins': 4.0.0_hl5bvxq2pdxvj5vfdstnvelclu
   prisma: 3.15.2
   tailwindcss: 3.1.3
@@ -2069,6 +2073,12 @@ packages:
       '@types/scheduler': 0.16.2
       csstype: 3.1.0
 
+  /@types/redux-logger/3.0.9:
+    resolution: {integrity: sha512-cwYhVbYNgH01aepeMwhd0ABX6fhVB2rcQ9m80u8Fl50ZODhsZ8RhQArnLTkE7/Zrfq4Sz/taNoF7DQy9pCZSKg==}
+    dependencies:
+      redux: 4.2.0
+    dev: true
+
   /@types/resize-observer-browser/0.1.7:
     resolution: {integrity: sha512-G9eN0Sn0ii9PWQ3Vl72jDPgeJwRWhv2Qk/nQkJuWmRmOB4HX3/BhD5SE1dZs/hzPZL/WKnvF0RHdTSG54QJFyg==}
     dev: false
@@ -3939,6 +3949,10 @@ packages:
   /decode-uri-component/0.2.0:
     resolution: {integrity: sha512-hjf+xovcEn31w/EUYdTXQh/8smFL/dzYjohQGEIgjyNavaJfBY2p5F527Bo1VPATxv0VYTUC2bOcXvqFwk78Og==}
     engines: {node: '>=0.10'}
+    dev: false
+
+  /deep-diff/0.3.8:
+    resolution: {integrity: sha512-yVn6RZmHiGnxRKR9sJb3iVV2XTF1Ghh2DiWRZ3dMnGc43yUdWWF/kX6lQyk3+P84iprfWKU/8zFTrlkvtFm1ug==}
     dev: false
 
   /deepmerge/4.2.2:
@@ -8041,6 +8055,12 @@ packages:
   /real-require/0.1.0:
     resolution: {integrity: sha512-r/H9MzAWtrv8aSVjPCMFpDMl5q66GqtmmRkRjpHTsp4zBAa+snZyiQNlMONiUmEJcsnaw0wCauJ2GWODr/aFkg==}
     engines: {node: '>= 12.13.0'}
+
+  /redux-logger/3.0.6:
+    resolution: {integrity: sha512-JoCIok7bg/XpqA1JqCqXFypuqBbQzGQySrhFzewB7ThcnysTO30l4VCst86AuB9T9tuT03MAA56Jw2PNhRSNCg==}
+    dependencies:
+      deep-diff: 0.3.8
+    dev: false
 
   /redux-saga/0.16.2:
     resolution: {integrity: sha512-iIjKnRThI5sKPEASpUvySemjzwqwI13e3qP7oLub+FycCRDysLSAOwt958niZW6LhxfmS6Qm1BzbU70w/Koc4w==}
