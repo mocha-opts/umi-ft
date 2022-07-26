@@ -49654,7 +49654,7 @@ var require_client2 = __commonJS3({
           "value": "prisma-client-js"
         },
         "output": {
-          "value": "C:\\dev_env\\Projects\\Github\\umi-ft\\node_modules\\.pnpm\\@prisma+client@3.15.2_prisma@3.15.2\\node_modules\\@prisma\\client",
+          "value": "D:\\Github\\umi-ft\\node_modules\\.pnpm\\@prisma+client@3.15.2_prisma@3.15.2\\node_modules\\@prisma\\client",
           "fromEnvVar": null
         },
         "config": {

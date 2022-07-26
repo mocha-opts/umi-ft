@@ -29,6 +29,7 @@ export default () => {
         rules: [{ required: true, message: "请输入其他" }],
       },
 
+<<<<<<< Updated upstream
       {
         name: "password",
         label: "Password",
@@ -70,3 +71,20 @@ export default () => {
   };
   return <Form {...config} />;
 };
+=======
+/*
+form(onsubmit="return false")
+  .form-item
+    label Username
+    .input-wrapper
+      input(type="text" id="username" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-lpignore="true")
+  .form-item
+    label Password
+    .input-wrapper
+      input(type="password" id="password" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-lpignore="true")
+      button(type="button" id="eyeball")
+        .eye
+      #beam
+  button(id="submit") Sign in
+*/
+>>>>>>> Stashed changes

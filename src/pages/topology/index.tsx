@@ -1,5 +1,5 @@
-import TopologyGraph from "@/components/TogologyGraph";
 import React from "react";
+import TopologyGraph from "@/components/TopologyGraph";
 import styles from "./index.less";
 
 export default () => {
