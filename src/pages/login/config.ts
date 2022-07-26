@@ -1,3 +1,5 @@
+import React from "react";
+import * as ICONS from "@ant-design/icons";
 import { createForm } from "@formily/core";
 import { createSchemaField } from "@formily/react";
 import { FormItem, Input, Password } from "@formily/antd";
