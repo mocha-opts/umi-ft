@@ -13,13 +13,21 @@ export default {
   ],
   plugins: [
     // require.resolve("@umijs/plugins/dist/tailwindcss"),
-    require.resolve("@umijs/plugins/dist/dva"),
     require.resolve("@umijs/plugins/dist/qiankun"),
     require.resolve("@umijs/plugins/dist/locale"),
     require.resolve("@umijs/plugins/dist/request"),
   ],
+  lessLoader: {
+    modifyVars: {
+      "root-entry-name": "default",
+    },
+  },
+  locale: {
+    // 默认使用 src/locales/zh-CN.ts 作为多语言文件
+    default: "en-US",
+    baseSeparator: "-",
+  },
   // tailwindcss: {},
-  dva: {},
   request: {},
   mock: false,
   qiankun: {
