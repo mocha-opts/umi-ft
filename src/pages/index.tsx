@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { history } from "umi";
 import { useRequest } from "ahooks";
 import { listPost } from "@/services/api";
-import "antd/dist/antd.less";
 import type { Post } from "@/utils/types";
 import { Demo } from "@/components/Demo";
 import { Button } from "antd";

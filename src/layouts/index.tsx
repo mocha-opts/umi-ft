@@ -2,7 +2,21 @@ import React from 'react';
 import { Link, Outlet } from 'umi';
 import styles from './index.less';
 
-export default function Layout() {
+import { Provider, observer } from "mobx-react";
+import { stores } from "@/stores";
+// import { isSynchronized } from "mobx-persist-store";
+import "@/sula";
+
+export default observer(() => {
+  // const allStoreAreSynchronized = () => {
+  //   return Object.values(stores).every((store) => {
+  //     return isSynchronized(store);
+  //   });
+  // };
+  // if (!allStoreAreSynchronized()) {
+  //   console.log("loading");
+  //   return <p>Loading...</p>;
+  // }
   return (
     <div className={styles.navs}>
       <ul>
@@ -22,7 +36,10 @@ export default function Layout() {
           <Link to="topology">topology</Link>
         </li>
       </ul>
-      <Outlet />
+      <Provider {...stores}>
+        <Outlet />
+      </Provider>
     </div>
   );
-}
+});
+

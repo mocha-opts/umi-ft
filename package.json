@@ -30,11 +30,16 @@
     "dagre": "^0.8.5",
     "jsonwebtoken": "^8.5.1",
     "lottie-web": "^5.9.5",
+    "mobx": "^6.6.1",
+    "mobx-persist-store": "^1.0.6",
+    "mobx-react": "^7.5.2",
     "mockjs": "^1.1.0",
     "moment": "^2.29.3",
     "puppeteer": "^15.2.0",
     "redux-logger": "^3.0.6",
-    "umi": "^4.0.0-rc.24"
+    "sula": "1.2.0-beta.68",
+    "umi": "^4.0.0-rc.24",
+    "umi-plugin-sula": "1.0.0-beta.2"
   },
   "devDependencies": {
     "@types/dagre": "^0.7.47",

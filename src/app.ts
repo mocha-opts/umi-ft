@@ -1,11 +1,12 @@
-import { createLogger } from "redux-logger";
-import { message } from "antd";
-
-export const dva = {
-  config: {
-    onAction: createLogger(),
-    onError(e: Error) {
-      message.error(e.message, 3);
-    },
-  },
-};
+import { configure } from "mobx";
+import { configurePersistable } from "mobx-persist-store";
+configure({
+  enforceActions: "always",
+  computedRequiresReaction: true,
+  reactionRequiresObservable: true,
+  observableRequiresReaction: true,
+  disableErrorBoundaries: false,
+});
+configurePersistable({
+  debugMode: false,
+});
