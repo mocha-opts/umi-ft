@@ -22,6 +22,7 @@ export default {
       "root-entry-name": "default",
     },
   },
+  inlineLimit: 10000,
   locale: {
     // 默认使用 src/locales/zh-CN.ts 作为多语言文件
     default: "en-US",
