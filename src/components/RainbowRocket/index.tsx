@@ -1,10 +1,13 @@
-function name(params: type) {
-  /* Please don't use this for free. Please contact me for licensing  */
+import React, { useEffect, useRef } from "react";
+import { gsap, TimelineMax, TweenMax, Linear, Power2 } from "gsap";
+import rocket from "./rocket.svg";
+export default function RainBowRocket() {
+  const boxRef = useRef();
 
-  (function () {
+  useEffect(() => {
     var b = document.getElementsByClassName("jetBubble"),
       h = document.querySelector(".rocketManSVG");
-    document.querySelector(".shakeGroup");
+    a = document.querySelector(".shakeGroup");
     var e = document.querySelector(".star"),
       a = document.querySelector(".satellite"),
       c = document.querySelector(".astronaut"),
@@ -68,5 +71,6 @@ function name(params: type) {
           }
         );
     h.removeChild(e);
-  })();
+  }, []);
+  return <img alt="rainbowRocket" ref={boxRef} src={rocket}></img>;
 }

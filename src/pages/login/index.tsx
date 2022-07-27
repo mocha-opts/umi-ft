@@ -3,11 +3,14 @@ import { login } from "@/services/api";
 import type { Password as PasswordType } from "@/types/login";
 import { Form } from "sula";
 
-import { useRequest, useIntl, setLocale } from "umi";
+import { useRequest, useIntl, setLocale, history } from "umi";
 import { InfoCircleOutlined, UserOutlined } from "@ant-design/icons";
+import { observer } from "mobx-react";
+import { useStore } from "@/stores";
 
-export default () => {
+export default observer(() => {
   const intl = useIntl();
+  const { UserStore } = useStore();
   const { run: runLogin, error, loading } = useRequest(login, { manual: true });
   const handleLogin = ({ password, email }: PasswordType) => {
     runLogin({ password, email });
@@ -29,7 +32,6 @@ export default () => {
         rules: [{ required: true, message: "请输入其他" }],
       },
 
-<<<<<<< Updated upstream
       {
         name: "password",
         label: "Password",
@@ -63,28 +65,13 @@ export default () => {
             },
           },
           (ctx) => {
-            console.log(ctx.result);
+            UserStore.login(ctx.result);
+            history.push("/");
+            console.log(ctx);
           },
         ],
       },
     ],
   };
   return <Form {...config} />;
-};
-=======
-/*
-form(onsubmit="return false")
-  .form-item
-    label Username
-    .input-wrapper
-      input(type="text" id="username" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-lpignore="true")
-  .form-item
-    label Password
-    .input-wrapper
-      input(type="password" id="password" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-lpignore="true")
-      button(type="button" id="eyeball")
-        .eye
-      #beam
-  button(id="submit") Sign in
-*/
->>>>>>> Stashed changes
+});

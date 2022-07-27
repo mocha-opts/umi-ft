@@ -4,7 +4,8 @@
     "dev": "umi dev",
     "build": "prisma generate && umi build",
     "postinstall": "umi setup",
-    "start": "npm run dev"
+    "start": "prisma generate && npm run dev",
+    "studio": "prisma studio"
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
@@ -28,6 +29,7 @@
     "axios": "^0.27.2",
     "bcryptjs": "^2.4.3",
     "dagre": "^0.8.5",
+    "gsap": "^3.10.4",
     "jsonwebtoken": "^8.5.1",
     "lottie-web": "^5.9.5",
     "mobx": "^6.6.1",

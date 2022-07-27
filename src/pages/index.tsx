@@ -5,6 +5,7 @@ import { listPost } from "@/services/api";
 import type { Post } from "@/utils/types";
 import { Demo } from "@/components/Demo";
 import { Button } from "antd";
+import RainBowRocket from "@/components/RainbowRocket";
 export default function HomePage() {
   const { data: posts, error, loading } = useRequest(listPost);
   const [id, setId] = useState(1);
@@ -22,6 +23,7 @@ export default function HomePage() {
           ))}
         </div>
       )} */}
+      <RainBowRocket></RainBowRocket>
       <Button onClick={() => setId(id + 1)}>dasda</Button>
       {id}
       <Demo id={id}></Demo>
