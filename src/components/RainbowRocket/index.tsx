@@ -85,6 +85,11 @@ export default function RainBowRocket() {
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 600 600"
+      style={{
+        backgroundColor: "hsl(227.3684210526deg 12.2580645161% 30.3921568627%)",
+        width: "500px",
+        height: "500px",
+      }}
     >
       <defs>
         <path
