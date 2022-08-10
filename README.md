@@ -1,4 +1,2 @@
-# umi-ft手动
+# 这是Umi4版本的第一次尝试
 
-npx prisma db push
-npx prisma generate
